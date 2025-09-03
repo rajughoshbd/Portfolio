@@ -535,7 +535,11 @@ section h2 {
 }
 
 .service-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: #fff;
+  height: 400px;
   padding: 30px 20px;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);

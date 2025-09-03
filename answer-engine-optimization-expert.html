@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/styles/layout/layout.css">
+    <link rel="stylesheet" href="/styles/answer.css">
+</head>
+<body>
+    <header class="header-container">
+      <div class="nav-container">
+        <a href="/index.html" class="logo">
+          <img src="/image/website-logo-raju-ghosh.svg" alt="Raju Ghosh Logo" />
+        </a>
+
+        <nav class="nav-menu" role="navigation" aria-label="Main Menu">
+          <ul>
+            <li>
+              <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li><a href="/about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a href="/services.html"
+                >Services <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#seo-audit">SEO Audit</a></li>
+                <li><a href="#onpage">On-Page SEO</a></li>
+                <li><a href="#offpage">Off-Page SEO</a></li>
+                <li><a href="#local">Local SEO</a></li>
+              </ul>
+            </li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <div class="getstarted"><a href="#contact">Get Started</a></div>
+        </nav>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <ul>
+          <li>
+            <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li><a href="/about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a href="/services.html" class="dropdown-toggle"
+              >Services <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#seo-audit">SEO Audit</a></li>
+              <li><a href="#onpage">On-Page SEO</a></li>
+              <li><a href="#offpage">Off-Page SEO</a></li>
+              <li><a href="#local">Local SEO</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <div class="getstarted"><a href="#contact">Get Started</a></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>hello world</h1>
+        </section>
+    </main>
+      <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Raju Ghosh | SEO Expert in Bangladesh</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a
+      href="javascript:void(0)"
+      class="whatsapp-float"
+      id="whatsappBtn"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- WhatsApp Popup -->
+    <div
+      id="whatsappPopup"
+      class="whatsapp-popup"
+      role="dialog"
+      aria-labelledby="popupTitle"
+      aria-hidden="true"
+    >
+      <div class="popup-content">
+        <button id="closePopup" class="close" aria-label="Close">
+          &times;
+        </button>
+        <h3 id="popupTitle">Chat on WhatsApp</h3>
+        <label for="waName">Your Name</label>
+        <input type="text" id="waName" placeholder="Your Name" />
+        <label for="waMessage">Your Message</label>
+        <textarea id="waMessage" placeholder="Your Message"></textarea>
+        <button id="sendMessage">Send</button>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
