@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Soft Mesh Gradient Background */
+body {
+  min-height: 100vh;
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+
+  /* mesh-style: overlapping radial-gradients */
+  background: radial-gradient(
+      1200px 800px at 10% 20%,
+      rgba(53, 30, 191, 0.18) 0%,
+      rgba(251, 189, 4, 0.065) 35%,
+      transparent 70%
+    ),
+    radial-gradient(
+      900px 700px at 85% 15%,
+      rgba(229, 225, 250, 0.25) 0%,
+      rgba(53, 30, 191, 0.12) 40%,
+      transparent 75%
+    ),
+    radial-gradient(
+      1000px 900px at 40% 85%,
+      rgba(251, 188, 4, 0.18) 0%,
+      rgba(255, 243, 224, 0.25) 45%,
+      transparent 80%
+    ),
+    radial-gradient(
+      800px 600px at 70% 65%,
+      rgba(53, 30, 191, 0.15) 0%,
+      rgba(229, 225, 250, 0.2) 50%,
+      transparent 85%
+    ),
+    linear-gradient(180deg, #ffffff 0%, #f9f9fb 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header-container {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: saturate(140%) blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.header-container.sticky {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-container {
+  width: 1200px;
+  max-width: 92%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-container img {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.getstarted {
+  padding: 8px 16px;
+  background-color: #fbbc04;
+  color: #351ebf;
+  border-radius: 8px;
+  transition: transform 0.15s ease, background-color 0.25s ease;
+}
+
+.getstarted a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.getstarted:hover {
+  background-color: #e2a904;
+  transform: translateY(-1px);
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  justify-self: end;
+}
+
+.hamburger .bar {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  border-radius: 3px;
+  background: #222;
+  transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease,
+    bottom 0.25s ease;
+}
+
+.hamburger .bar:nth-child(1) {
+  top: 14px;
+}
+.hamburger .bar:nth-child(2) {
+  top: 21px;
+}
+.hamburger .bar:nth-child(3) {
+  top: 28px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+  top: 21px;
+  transform: rotate(-45deg);
+}
+
+.hamburger.active {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70%;
+  max-width: 300px;
+  z-index: 1000;
+  background: linear-gradient(135deg, #a0c4ff 0%, #bdb2ff 100%);
+  opacity: 0;
+  box-shadow: -6px 0 20px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+  overflow-y: auto;
+  padding: 70px 20px 20px;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.mobile-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu .dropdown-menu {
+  display: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.mobile-menu .dropdown-menu.open {
+  display: block;
+}
+
+.mobile-menu .dropdown-menu a {
+  font-size: 1rem;
+  padding: 8px 15px;
+}
+
+.mobile-menu .getstarted {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Services Dropdown */
+.nav-item {
+  position: relative;
+}
+
+.nav-item a i {
+  margin-left: 6px;
+  font-size: 0.75rem;
+}
+
+/* Hidden by default */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  display: none !important;
+  min-width: 200px;
+  min-height: auto;
+  z-index: 999;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+
+.dropdown-menu li a:hover {
+  background: #f5f5f5;
+  color: #351ebf;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+  display: block !important;
+}
+
+/* Mobile style */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    display: none;
+    padding-left: 20px;
+  }
+  .dropdown-menu.open {
+    display: block;
+  }
+  .dropdown-menu li a {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Sticky WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+  transition: transform 0.2s ease, background 0.25s ease;
+}
+.whatsapp-float:hover {
+  background: #1ebe5d;
+  transform: scale(1.1);
+}
+
+/* Popup Base */
+.whatsapp-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1200;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.popup-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.popup-content button {
+  padding: 10px;
+  border: none;
+  background: #25d366;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.popup-content button:hover {
+  background: #1ebe5d;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: #eee;
+  padding: 25px 15px;
+  margin-top: 60px;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer .socials a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.25s ease;
+}
+.footer .socials a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+  .container {
+    padding: 40px 15px;
+  }
+
+  .nav-container {
+    max-width: 95%;
+  }
+}
