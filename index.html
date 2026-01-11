@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <link rel="icon" href="/image/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
     <script type="application/ld+json">
       {
@@ -48,7 +48,7 @@
         "@type": "Person",
         "name": "Raju Ghosh",
         "url": "https://rajughoshbd.com/",
-        "image": "https://rajughoshbd.com/image/raju-ghosh.jpg",
+        "image": "https://rajughoshbd.com/images/raju-ghosh.jpg",
         "jobTitle": "Top SEO Expert in Bangladesh",
         "worksFor": {
           "@type": "Organization",
@@ -71,9 +71,9 @@
           "https://www.linkedin.com/in/rajughoshbd/",
           "https://x.com/rajughoshbd/",
           "https://www.instagram.com/rajughoshbd/",
-          "https://www.youtube.com/@rajughoshbd"
-          "https://www.pinterest.com/rajughoshbdseo/"
-          "https://github.com/rajughoshbd"
+          "https://www.youtube.com/@rajughoshbd",
+          "https://www.pinterest.com/rajughoshbdseo/",
+          "https://github.com/rajughoshbd",
           "https://www.reddit.com/user/rajughoshbd/"
         ],
         "contactPoint": {
@@ -152,14 +152,17 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://rajughoshbd.com/" />
 
-    <!-- CSS with cache-busting -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/style.css?v=1.0" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="style.css?v=<?php echo filemtime('style.css'); ?>"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <!-- JS with cache-busting -->
-    <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -172,7 +175,7 @@
     <meta property="og:site_name" content="Raju Ghosh Portfolio" />
     <meta
       property="og:image"
-      content="https://rajughoshbd.com/image/Raju-Ghosh-SEO-Expert_Bangladesh.webp"
+      content="https://rajughoshbd.com/images/Raju-Ghosh-SEO-Expert_Bangladesh.webp"
     />
     <meta
       property="og:image:alt"
@@ -191,25 +194,15 @@
     />
     <meta
       name="twitter:image"
-      content="https://rajughoshbd.com/image/Raju-Ghosh-SEO-Expert_Bangladesh.webp"
+      content="https://rajughoshbd.com/images/Raju-Ghosh-SEO-Expert_Bangladesh.webp"
     />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header-container">
       <div class="nav-container">
         <a href="/index.html" class="logo">
-          <img src="/image/website-logo-raju-ghosh.svg" alt="Raju Ghosh Logo" />
+          <img src="/images/website-logo-raju-ghosh.svg" alt="Raju Ghosh Logo" />
         </a>
 
         <nav class="nav-menu" role="navigation" aria-label="Main Menu">
@@ -223,10 +216,10 @@
                 >Services <i class="fa-solid fa-chevron-down"></i
               ></a>
               <ul class="dropdown-menu">
-                <li><a href="#seo-audit">SEO Audit</a></li>
-                <li><a href="#onpage">On-Page SEO</a></li>
-                <li><a href="#offpage">Off-Page SEO</a></li>
-                <li><a href="#local">Local SEO</a></li>
+                <li><a href="/services.html#seo-audit">SEO Audit</a></li>
+                <li><a href="/services.html#onpage">On-Page SEO</a></li>
+                <li><a href="/services.html#offpage">Off-Page SEO</a></li>
+                <li><a href="/services.html#local">Local SEO</a></li>
               </ul>
             </li>
             <li><a href="/contact.html">Contact</a></li>
@@ -260,10 +253,10 @@
               >Services <i class="fa-solid fa-chevron-down"></i
             ></a>
             <ul class="dropdown-menu">
-              <li><a href="#seo-audit">SEO Audit</a></li>
-              <li><a href="#onpage">On-Page SEO</a></li>
-              <li><a href="#offpage">Off-Page SEO</a></li>
-              <li><a href="#local">Local SEO</a></li>
+              <li><a href="/services.html#seo-audit">SEO Audit</a></li>
+              <li><a href="/services.html#onpage">On-Page SEO</a></li>
+              <li><a href="/services.html#offpage">Off-Page SEO</a></li>
+              <li><a href="/services.html#local">Local SEO</a></li>
             </ul>
           </li>
           <li><a href="/contact.html">Contact</a></li>
@@ -283,14 +276,15 @@
             Top SEO Expert in Bangladesh
           </h1>
           <p>
-            Scaling brands at the intersection of traditional search and the future of AI. As a top SEO expert in Bangladesh, I leverage predictive AI models to dominate Google, Google Maps, and emerging AI search engines like ChatGPT, Perplexity, and SGE. I don’t just build backlinks; I build authority to turn your organic visibility into sustainable revenue growth through a modern, data-backed SEO framework.
+            Scaling brands at the intersection of traditional search and the future of AI. As a top SEO expert in Bangladesh, I leverage predictive AI models to dominate Google, Google Maps, and emerging AI search engines like ChatGPT, Perplexity, and SGE. I don't just build backlinks; I build authority to turn your organic visibility into sustainable revenue growth through a modern, data-backed SEO framework.
           </p>
-          <a href="/contact/" class="hero-button">Contact Us</a>
+          <a href="/contact.html" class="hero-button">Contact Us</a>
         </div>
         <figure>
           <img
-            src="/image/Raju-Ghosh-SEO-Expert_Bangladesh.webp"
+            src="/images/Raju-Ghosh-SEO-Expert_Bangladesh.webp"
             alt="Raju Ghosh - SEO Expert in Bangladesh"
+            loading="lazy"
           />
         </figure>
       </section>
@@ -314,7 +308,7 @@
         <div class="container">
           <h2>My Services</h2>
           <div class="service-cards">
-            <article class="card" id="seo-audit">
+            <article class="card" id="generative-seo">
               <div>
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>Generative SEO & AI Content Strategy</h3>
@@ -324,9 +318,8 @@
               </p>
               <a href="/generative-seo-expert.html">Learn More</a>
             </article>
-            <article class="card" id="seo-audit">
+            <article class="card" id="semantic-seo">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>Semantic SEO</h3>
               </div>
@@ -336,9 +329,8 @@
               <a href="/semantic-seo-expert.html">Learn More</a>
             </article>
             
-            <article class="card" id="seo-audit">
+            <article class="card" id="answer-engine">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>Answer Engine Optimization</h3>
               </div>
@@ -348,9 +340,8 @@
               <a href="/answer-engine-optimization-expert.html">Learn More</a>
             </article>
             
-            <article class="card" id="seo-audit">
+            <article class="card" id="local-seo">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>Local SEO</h3>
               </div>
@@ -360,45 +351,41 @@
               <a href="/local-seo-expert.html">Learn More</a>
             </article>
             
-            <article class="card" id="seo-audit">
+            <article class="card" id="ecommerce-seo">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>E-Commerce SEO</h3>
               </div>
               <p>
                 In-depth website audit to identify SEO issues and opportunities.
               </p>
-              <a href="/semantic-seo-expert.html">Learn More</a>
+              <a href="/ecommerce-seo-expert.html">Learn More</a>
             </article>
             
-            <article class="card" id="seo-audit">
+            <article class="card" id="onpage-seo">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>On-Page SEO</h3>
               </div>
               <p>
                 In-depth website audit to identify SEO issues and opportunities.
               </p>
-              <a href="/semantic-seo-expert.html">Learn More</a>
+              <a href="/onpage-seo-expert.html">Learn More</a>
             </article>
             
-            <article class="card" id="seo-audit">
+            <article class="card" id="backlink">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
-                <h3>Backlink</h3>
+                <h3>Backlink Building</h3>
               </div>
               <p>
                 In-depth website audit to identify SEO issues and opportunities.
               </p>
-              <a href="/semantic-seo-expert.html">Learn More</a>
+              <a href="/backlink-services.html">Learn More</a>
             </article>
             
-            <article class="card" id="seo-audit">
+            <article class="card" id="orm">
               <div>
-
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h3>Online Reputation Management (ORM)</h3>
               </div>
@@ -407,9 +394,6 @@
               </p>
               <a href="/online-reputation-management-services.html">Learn More</a>
             </article>
-            
-         
-            
           </div>
         </div>
       </section>
@@ -482,14 +466,16 @@
           <div class="testimonial-grid">
             <blockquote class="testimonial-card">
               <p>
-                “Raju Ghosh really transformed my website ranking. Within 3
-                months, I started seeing results. Highly recommended!”
+                "Raju Ghosh really transformed my website ranking. Within 3
+                months, I started seeing results. Highly recommended!"
               </p>
               <footer class="testimonial-author">
                 <img
-                  src="https://rajughoshbd.com/image/sumon-ghosh.webp""
+                  src="/images/sumon-ghosh.webp"
                   alt="Dr. Sumon Ghosh"
                   loading="lazy"
+                  width="60"
+                  height="60"
                 />
                 <cite
                   ><strong>Dr. Sumon Ghosh</strong>, Consultant
@@ -499,14 +485,16 @@
             </blockquote>
             <blockquote class="testimonial-card">
               <p>
-                “Professional, reliable, and result-driven SEO services. My
-                organic traffic doubled in 6 months!”
+                "Professional, reliable, and result-driven SEO services. My
+                organic traffic doubled in 6 months!"
               </p>
               <footer class="testimonial-author">
                 <img
-                  src="image/Moshiour-Rahman-milan-MD-Sumi-Upvc-pipe-industries.webp"
+                  src="/images/Moshiour-Rahman-milan-MD-Sumi-Upvc-pipe-industries.webp"
                   alt="Sumi uPVC Pipe Industries"
                   loading="lazy"
+                  width="60"
+                  height="60"
                 />
                 <cite
                   ><strong>Sumi uPVC Pipe Industries</strong>, Satkhira,
@@ -516,18 +504,19 @@
             </blockquote>
             <blockquote class="testimonial-card">
               <p>
-                “Raju is a true SEO expert in Bangladesh. He always uses ethical
-                SEO strategies for long-term growth.”
+                "Raju is a true SEO expert in Bangladesh. He always uses ethical
+                SEO strategies for long-term growth."
               </p>
               <footer class="testimonial-author">
                 <img
-                  src="image/Subrota-Das-md-absolute-plastics-ltd.webp"
+                  src="/images/Subrota-Das-md-absolute-plastics-ltd.webp"
                   alt="Absolute Plastics Ltd"
                   loading="lazy"
+                  width="60"
+                  height="60"
                 />
                 <cite
-                  ><strong>Absolute Plastics Ltd</strong>, Eco-friendly plastic recycling company in the Bangladesh.
-                </cite
+                  ><strong>Absolute Plastics Ltd</strong>, Eco-friendly plastic recycling company in Bangladesh.</cite
                 >
               </footer>
             </blockquote>
@@ -545,44 +534,49 @@
           <div class="portfolio-grid">
             <figure class="portfolio-item">
               <img
-                src="image/ranking-proof-rajughoshbd.webp"
+                src="/images/ranking-proof-rajughoshbd.webp"
                 alt="SEO Project for Sumi uPVC Pipe Industries"
                 loading="lazy"
+                width="400"
+                height="300"
               />
               <figcaption class="portfolio-overlay">
                 <h3>SEO Project for Sumi uPVC Pipe Industries</h3>
-                <a href="image/ranking-proof-rajughoshbd.webp" target="_blank"
+                <a href="/images/ranking-proof-rajughoshbd.webp" target="_blank"
                   >View Project</a
                 >
               </figcaption>
             </figure>
             <figure class="portfolio-item">
               <img
-                src="image/ranking-proof-rajughoshbd.webp"
+                src="/images/ranking-proof-rajughoshbd.webp"
                 alt="SEO Optimization for AK Trade International"
                 loading="lazy"
+                width="400"
+                height="300"
               />
               <figcaption class="portfolio-overlay">
                 <h3>SEO Optimization for AK Trade International</h3>
-                <a href="image/ranking-proof-rajughoshbd.webp" target="_blank"
+                <a href="/images/ranking-proof-rajughoshbd.webp" target="_blank"
                   >View Project</a
                 >
               </figcaption>
             </figure>
             <figure class="portfolio-item">
               <img
-                src="image/ranking-proof-rajughoshbd.webp"
-                alt="SEO Optimization for AK Trade International"
+                src="/images/ranking-proof-rajughoshbd.webp"
+                alt="SEO Optimization for Local Business"
                 loading="lazy"
+                width="400"
+                height="300"
               />
               <figcaption class="portfolio-overlay">
-                <h3>SEO Optimization for AK Trade International</h3>
-                <a href="image/ranking-proof-rajughoshbd.webp" target="_blank"
+                <h3>SEO Optimization for Local Business</h3>
+                <a href="/images/ranking-proof-rajughoshbd.webp" target="_blank"
                   >View Project</a
                 >
               </figcaption>
             </figure>
-            <!-- (other portfolio items structured the same way) -->
           </div>
         </div>
       </section>
@@ -632,25 +626,27 @@
           <h2>My Certifications</h2>
           <div class="cert-card">
             <img
-              src="/image/advance-seo-Certification-of-Raju-Ghosh-by-mdfarukkhan-10minuteschool.webp"
+              src="/images/advance-seo-Certification-of-Raju-Ghosh-by-mdfarukkhan-10minuteschool.webp"
               alt="SEO Certificate of Raju Ghosh"
               loading="lazy"
+              width="300"
+              height="200"
             />
-            <div class="cert-card">
+            <div class="cert-content">
               <h3>Advanced SEO Expert</h3>
               <p>
                 Certified by
                 <a
                   href="https://10minuteschool.com/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   >10 Minute School</a
                 >
                 under
                 <a
                   href="https://www.mdfarukkhan.com/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   >Md. Faruk Khan</a
                 >.
               </p>
@@ -658,7 +654,7 @@
                 <a
                   href="https://lms10.s3.ap-southeast-1.amazonaws.com/skillup/certificates/67a5132638146.pdf"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   class="verify-link"
                 >
                   Verify Certificate</a
@@ -735,17 +731,24 @@
       <section id="contact" class="contact-section">
         <div class="container">
           <h2>Contact Me</h2>
-          <p>Have a project in mind? Let’s work together.</p>
-          <form>
+          <p>Have a project in mind? Let's work together.</p>
+          <form id="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_template" value="table">
+            
             <label for="name">Your Name</label>
-            <input id="name" type="text" placeholder="Your Name" required />
+            <input id="name" name="name" type="text" placeholder="Your Name" required />
 
             <label for="email">Your Email</label>
-            <input id="email" type="email" placeholder="Your Email" required />
+            <input id="email" name="email" type="email" placeholder="Your Email" required />
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Your Phone Number" />
 
             <label for="message">Your Message</label>
             <textarea
               id="message"
+              name="message"
               placeholder="Your Message"
               required
             ></textarea>
@@ -761,21 +764,21 @@
           <div class="blog-grid">
             <!-- Blog Post 1 -->
             <article class="blog-card">
-              <img src="/blog/post1-image.webp" alt="Post 1 Title" />
-              <h3><a href="/Contact/">Post 1 Title</a></h3>
-              <p>Short description / excerpt of post 1...</p>
+              <img src="/images/blog-post1.webp" alt="What is SEO and How it Works" loading="lazy" width="300" height="200" />
+              <h3><a href="/blog/what-is-seo.html">What is SEO and How it Works</a></h3>
+              <p>Learn the basics of Search Engine Optimization and how it can help your business grow online.</p>
             </article>
             <!-- Blog Post 2 -->
             <article class="blog-card">
-              <img src="/blog/post2-image.webp" alt="Post 2 Title" />
-              <h3><a href="/blog/post2.html">Post 2 Title</a></h3>
-              <p>Short description / excerpt of post 2...</p>
+              <img src="/images/blog-post2.webp" alt="Local SEO Strategies for 2024" loading="lazy" width="300" height="200" />
+              <h3><a href="/blog/local-seo-strategies.html">Local SEO Strategies for 2024</a></h3>
+              <p>Discover effective local SEO techniques to dominate your local market and attract more customers.</p>
             </article>
             <!-- Blog Post 3 -->
             <article class="blog-card">
-              <img src="/blog/post3-image.webp" alt="Post 3 Title" />
-              <h3><a href="/blog/post3.html">Post 3 Title</a></h3>
-              <p>Short description / excerpt of post 3...</p>
+              <img src="/images/blog-post3.webp" alt="AI in SEO: Future Trends" loading="lazy" width="300" height="200" />
+              <h3><a href="/blog/ai-in-seo.html">AI in SEO: Future Trends</a></h3>
+              <p>Explore how artificial intelligence is revolutionizing SEO practices and what you need to know.</p>
             </article>
           </div>
           <div class="view-all">
@@ -844,7 +847,7 @@
             </div>
 
             <div class="cta-container">
-              <a href="/contact" class="cta-btn">Get Your Free SEO Audit</a>
+              <a href="/contact.html" class="cta-btn">Get Your Free SEO Audit</a>
             </div>
           </article>
         </div>
@@ -888,6 +891,7 @@
           <i class="fa-brands fa-reddit"></i>
         </a>
         </div>
+        <p><a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
       </div>
     </footer>
 
@@ -922,6 +926,46 @@
       </div>
     </div>
 
-    <script src="/scripts.js"></script>
+    <!-- JavaScript -->
+    <script src="/js/main.js?v=1.0"></script>
+    <script>
+      // Simple form submission handler
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! I will contact you soon.');
+        this.reset();
+      });
+      
+      // WhatsApp button functionality
+      document.getElementById('whatsappBtn').addEventListener('click', function() {
+        const popup = document.getElementById('whatsappPopup');
+        popup.style.display = 'flex';
+        popup.setAttribute('aria-hidden', 'false');
+      });
+      
+      document.getElementById('closePopup').addEventListener('click', function() {
+        const popup = document.getElementById('whatsappPopup');
+        popup.style.display = 'none';
+        popup.setAttribute('aria-hidden', 'true');
+      });
+      
+      document.getElementById('sendMessage').addEventListener('click', function() {
+        const name = document.getElementById('waName').value;
+        const message = document.getElementById('waMessage').value;
+        const phone = '+8801723512512';
+        const text = `Hello, my name is ${name}. ${message}`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank');
+      });
+      
+      // Mobile menu toggle
+      document.getElementById('hamburger').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        menu.setAttribute('aria-hidden', isExpanded);
+        menu.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
