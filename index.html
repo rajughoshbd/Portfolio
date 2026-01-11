@@ -1,71 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta name="robots" content="index, follow" />
-
     <link rel="icon" href="/image/favicon.ico" type="image/x-icon" />
-
-
-
     <script type="application/ld+json">
-
       {
-
         "@context": "https://schema.org",
-
         "@type": "BreadcrumbList",
-
         "itemListElement": [
-
           {
-
             "@type": "ListItem",
-
             "position": 1,
-
             "name": "Home",
-
             "item": "https://rajughoshbd.com/"
-
           },
-
           {
-
             "@type": "ListItem",
-
             "position": 2,
-
             "name": "Services",
-
             "item": "https://rajughoshbd.com/services/"
-
           }
-
         ]
-
       }
-
     </script>
-
-
-
+    
     <script type="application/ld+json">
-
       {
-
         "@context": "https://schema.org",
-
         "@type": "WebSite",
-
         "url": "https://rajughoshbd.com/",
-
         "name": "Raju Ghosh",
 
         "alternateName": "Top SEO Expert in Bangladesh",
@@ -1702,298 +1667,76 @@
 
     </main>
 
-
-
     <!-- Footer -->
-
     <footer class="footer">
+  <div class="container">
+    <p>© 2026 Raju Ghosh | SEO Expert in Bangladesh</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/rajughoshbd/" target="_blank" rel="noopener noreferrer me" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/rajughoshbd/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-      <div class="container">
+      <a href="https://x.com/rajughoshbd/" target="_blank" rel="noopener noreferrer me" aria-label="Twitter/X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
 
-        <p>© 2026 Raju Ghosh | SEO Expert in Bangladesh</p>
+      <a href="https://www.instagram.com/rajughoshbd/" target="_blank" rel="noopener noreferrer me" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
 
-       <div class="socials">
+      <a href="https://www.youtube.com/@rajughoshbd" target="_blank" rel="noopener noreferrer me" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
 
-        <a href="https://www.facebook.com/rajughoshbd/" target="_blank" rel="noopener noreferrer me">
+      <a href="https://www.pinterest.com/rajughoshbdseo/" target="_blank" rel="noopener noreferrer me" aria-label="Pinterest">
+        <i class="fa-brands fa-pinterest"></i>
+      </a>
 
-          <i class="fa-brands fa-facebook"></i>
+      <a href="https://github.com/rajughoshbd" target="_blank" rel="noopener noreferrer me" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-        </a>
+      <a href="https://www.reddit.com/user/rajughoshbd/" target="_blank" rel="noopener noreferrer me" aria-label="Reddit">
+        <i class="fa-brands fa-reddit"></i>
+      </a>
+    </div>
+  </div>
+</footer>
 
+    <!-- Sticky WhatsApp Button -->
+    <a
+      href="javascript:void(0)"
+      class="whatsapp-float"
+      id="whatsappBtn"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-
-        <a href="https://www.linkedin.com/in/rajughoshbd/" target="_blank" rel="noopener noreferrer me">
-
-          <i class="fa-brands fa-linkedin"></i>
-
-        </a>
-
-
-
-        <a href="https://x.com/rajughoshbd/" target="_blank" rel="noopener noreferrer me">
-
-          <i class="fa-brands fa-x-twitter"></i>
-
-        </a>
-
-
-
-        <a href="https://www.instagram.com/rajughoshbd/" target="_blank" rel="noopener noreferrer me">
-
-          <i class="fa-brands fa-instagram"></i>
-
-        </a>
-
-
-
-        <a href="https://www.youtube.com/@rajughoshbd" target="_blank
-
-আপনার দেওয়া কোডটি আমি বিস্তারিতভাবে চেক করেছি। কোডটি বেশ গোছানো এবং SEO ফ্রেন্ডলি। তবে কিছু ছোট ছোট ভুল (Syntax errors) এবং উন্নতির জায়গা রয়েছে। নিচে সেগুলো পয়েন্ট আকারে দেওয়া হলো:
-
-১. বড় ভুল: HTML এর ভেতর PHP কোড (Syntax Error)
-আপনি আপনার CSS এবং JS ফাইলে ক্যাশ-বাস্টিং (cache-busting) করার জন্য নিচের কোডটি ব্যবহার করেছেন:
-
-HTML
-<link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>" />
-ভুলটি হলো: এটি একটি .html ফাইল। সাধারণ HTML ফাইলে পিএইচপি (<?php ... ?>) কাজ করে না। আপনার সার্ভার যদি এই ফাইলটিকে PHP হিসেবে প্রসেস না করে, তবে ব্রাউজারে এটি কাজ করবে না এবং লিঙ্কে সমস্যা করবে।
-
-সমাধান: যদি আপনার সার্ভার PHP সাপোর্ট করে, তবে ফাইলটির এক্সটেনশন .html থেকে পরিবর্তন করে .php করুন। আর যদি শুধু HTML ব্যবহার করতে চান, তবে ?v=1.0 এভাবে ম্যানুয়ালি ভার্সন লিখে দিন।
-
-২. JSON-LD তে অতিরিক্ত কমা (Syntax Error)
-আপনার Person স্কিমা কোডে একটি অতিরিক্ত কমা আছে যা JSON ফরম্যাট নষ্ট করতে পারে:
-
-JSON
-"https://www.reddit.com/user/rajughoshbd/", // এই কমাটি মুছে ফেলুন
-],
-JSON-এ লিস্টের শেষ আইটেমের পর কমা হয় না। এটি রিমুভ না করলে Google Rich Results Test-এ এরর দেখাতে পারে।
-
-৩. ট্যাগ ক্লোজিং সমস্যা (HTML Error)
-কোডের একদম শেষে </footer> এবং </body>, </html> ক্লোজ করা হয়নি। সম্ভবত কপি করার সময় বাদ পড়েছে, তবে রিয়েল কোডে এগুলো অবশ্যই থাকতে হবে।
-
-HTML
+    <!-- WhatsApp Popup -->
+    <div
+      id="whatsappPopup"
+      class="whatsapp-popup"
+      role="dialog"
+      aria-labelledby="popupTitle"
+      aria-hidden="true"
+    >
+      <div class="popup-content">
+        <button id="closePopup" class="close" aria-label="Close">
+          &times;
+        </button>
+        <h3 id="popupTitle">Chat on WhatsApp</h3>
+        <label for="waName">Your Name</label>
+        <input type="text" id="waName" placeholder="Your Name" />
+        <label for="waMessage">Your Message</label>
+        <textarea id="waMessage" placeholder="Your Message"></textarea>
+        <button id="sendMessage">Send</button>
       </div>
-    </footer> </body> </html> ```
+    </div>
 
-### ৪. ডুপ্লিকেট ID (Critical for Validity)
-HTML-এ একটি ID শুধুমাত্র একবার ব্যবহার করা যায়। আপনি আপনার Services সেকশনে ৮টি কার্ডেই `id="seo-audit"` ব্যবহার করেছেন।
-* **সমাধান:** প্রতিটির জন্য আলাদা ID দিন (যেমন: `id="on-page"`, `id="off-page"`) অথবা ID সরিয়ে শুধুমাত্র Class ব্যবহার করুন।
-
-### ৫. ডুপ্লিকেট লোগো এবং ন্যাভিগেশন (UI/UX)
-আপনার কোডে একটি `nav-menu` (ডেস্কটপ) এবং একটি `mobile-menu` (মোবাইল) আলাদাভাবে রাখা হয়েছে। এটি বড় সমস্যা নয়, তবে একই লিঙ্কে দুইবার ID বা Class ব্যবহার না করাই ভালো। এছাড়াও স্ক্রিপ্ট ফাইলে মোবাইল মেনু কাজ করার জন্য জাভাস্ক্রিপ্ট ঠিকমতো সেট করা আছে কিনা নিশ্চিত করুন।
-
-### ৬. ছোট কিছু টাইপো এবং লিংক চেক
-* **Testimonials:** `src="https://rajughoshbd.com/image/sumon-ghosh.webp""` — এখানে ডাবল কোটেশন (`""`) পড়ে গেছে শেষে। একটি হবে।
-* **Image Alt tags:** পোর্টফোলিও সেকশনে ৩টি ইমেজের `alt` টেক্সট একই দেওয়া আছে। SEO-র জন্য এগুলো আলাদা আলাদা (ইউনিক) হওয়া ভালো।
-
----
-
-### আপনার জন্য সংশোধিত কোডের অংশ (সাজেশন):
-
-**JSON-LD ঠিক করুন এভাবে:**
-```json
-"sameAs": [
-  "https://www.facebook.com/rajughoshbd/",
-  "https://www.linkedin.com/in/rajughoshbd/",
-  "https://x.com/rajughoshbd/",
-  "https://www.instagram.com/rajughoshbd/",
-  "https://www.youtube.com/@rajughoshbd",
-  "https://www.pinterest.com/rajughoshbdseo/",
-  "https://github.com/rajughoshbd",
-  "https://www.reddit.com/user/rajughoshbd/" 
-]
-CSS লিঙ্ক ঠিক করুন (যদি HTML ফাইল হয়):
-
-HTML
-<link rel="stylesheet" href="style.css?v=1.1" />
-উপসংহার: এই ছোট ভুলগুলো ঠিক করে নিলে আপনার পেজটি টেকনিক্যালি একদম পারফেক্ট হবে। বিশেষ করে SEO স্কিমা এবং ডুপ্লিকেট ID-র বিষয়টি গুরুত্ব দিন।
-
-tumi thik koro
-
-আপনার কোডটি আমি সম্পূর্ণ সংশোধন করে দিয়েছি। আমি মূলত নিচের পরিবর্তনগুলো করেছি:
-
-১. PHP Error: HTML ফাইলে PHP কোড কাজ করবে না, তাই ক্যাশ-বাস্টিং ভার্সনটি ম্যানুয়ালি ?v=1.0 করে দিয়েছি। ২. JSON-LD Schema: অতিরিক্ত কমা রিমুভ করেছি যাতে গুগল সার্চ কনসোলে এরর না আসে। ৩. Duplicate IDs: প্রতিটি সার্ভিস কার্ডের জন্য আলাদা আইডি যুক্ত করেছি। ৪. HTML Structure: টেস্টিনিমোনিয়াল সেকশনের ডাবল কোটেশন ঠিক করেছি এবং শেষে </footer>, </body> ট্যাগগুলো ক্লোজ করে দিয়েছি।
-
-নিচে সম্পূর্ণ সংশোধিত কোডটি দেওয়া হলো:
-
-HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" href="/image/favicon.ico" type="image/x-icon" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://rajughoshbd.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://rajughoshbd.com/services/"
-        }
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://rajughoshbd.com/",
-      "name": "Raju Ghosh",
-      "alternateName": "Top SEO Expert in Bangladesh",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://rajughoshbd.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Raju Ghosh",
-      "url": "https://rajughoshbd.com/",
-      "image": "https://rajughoshbd.com/image/raju-ghosh.jpg",
-      "jobTitle": "Top SEO Expert in Bangladesh",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Freelance SEO Consultant"
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Advanced SEO Expert Training - Md Faruk Khan, 10 Minute School"
-      },
-      "knowsAbout": [
-        "SEO", "On-Page SEO", "Off-Page SEO", "Technical SEO", "Local SEO", "E-Commerce SEO"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/rajughoshbd/",
-        "https://www.linkedin.com/in/rajughoshbd/",
-        "https://x.com/rajughoshbd/",
-        "https://www.instagram.com/rajughoshbd/",
-        "https://www.youtube.com/@rajughoshbd",
-        "https://www.pinterest.com/rajughoshbdseo/",
-        "https://github.com/rajughoshbd",
-        "https://www.reddit.com/user/rajughoshbd/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+8801723512512",
-        "contactType": "customer service",
-        "areaServed": "BD",
-        "availableLanguage": ["Bengali", "English"]
-      }
-    }
-    </script>
-
-    <title>Raju Ghosh - Top SEO Expert in Bangladesh</title>
-    <meta name="description" content="Rank on Google's 1st page with the top SEO expert in Bangladesh. Get more traffic and sales. Start your growth now!" />
-    <link rel="canonical" href="https://rajughoshbd.com/" />
-
-    <link rel="stylesheet" href="style.css?v=1.0" />
-    <script src="script.js?v=1.0" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-</head>
-<body>
-    <header class="header-container">
-        <div class="nav-container">
-            <a href="/index.html" class="logo">
-                <img src="/image/website-logo-raju-ghosh.svg" alt="Raju Ghosh Logo" />
-            </a>
-            <nav class="nav-menu" role="navigation" aria-label="Main Menu">
-                <ul>
-                    <li><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="/services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#seo-audit">SEO Audit</a></li>
-                            <li><a href="#onpage">On-Page SEO</a></li>
-                            <li><a href="#offpage">Off-Page SEO</a></li>
-                            <li><a href="#local">Local SEO</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-                <div class="getstarted"><a href="#contact">Get Started</a></div>
-            </nav>
-            <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </button>
-        </div>
-    </header>
-
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1 class="animated-text">Top SEO Expert in Bangladesh</h1>
-                <p>Scaling brands at the intersection of traditional search and AI search engines...</p>
-                <a href="/contact/" class="hero-button">Contact Us</a>
-            </div>
-            <figure>
-                <img src="/image/Raju-Ghosh-SEO-Expert_Bangladesh.webp" alt="Raju Ghosh - SEO Expert in Bangladesh" />
-            </figure>
-        </section>
-
-        <section id="services" class="services-section">
-            <div class="container">
-                <h2>My Services</h2>
-                <div class="service-cards">
-                    <article class="card" id="generative-seo">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                        <h3>Generative SEO & AI Strategy</h3>
-                        <p>In-depth website audit to identify SEO issues and opportunities.</p>
-                        <a href="/generative-seo-expert.html">Learn More</a>
-                    </article>
-                    <article class="card" id="semantic-seo">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                        <h3>Semantic SEO</h3>
-                        <p>Understanding intent and context for higher rankings.</p>
-                        <a href="/semantic-seo-expert.html">Learn More</a>
-                    </article>
-                    </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-                <h2 class="section-title">What My Clients Say</h2>
-                <div class="testimonial-grid">
-                    <blockquote class="testimonial-card">
-                        <p>“Raju Ghosh really transformed my website ranking. Highly recommended!”</p>
-                        <footer class="testimonial-author">
-                            <img src="https://rajughoshbd.com/image/sumon-ghosh.webp" alt="Dr. Sumon Ghosh" loading="lazy" />
-                            <cite><strong>Dr. Sumon Ghosh</strong>, Consultant (Australia)</cite>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Raju Ghosh | SEO Expert in Bangladesh</p>
-            <div class="socials">
-                <a href="https://www.facebook.com/rajughoshbd/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/rajughoshbd/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://x.com/rajughoshbd/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
+    <script src="/scripts.js"></script>
+  </body>
 </html>
