@@ -1,12 +1,16 @@
 {
-  "cleanUrls": true
-
-}
-{
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
-      "source": "http://www.rajughoshbd.com/:path*",
-      "destination": "https://rajughoshbd.com/:path*",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.rajughoshbd.com"
+        }
+      ],
+      "destination": "https://rajughoshbd.com/:1",
       "permanent": true
     }
   ]
