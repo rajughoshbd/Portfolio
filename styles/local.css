@@ -70,4 +70,11 @@ li { margin-bottom:0.5rem; }
 .faq dd { display:none; padding:12px 20px; background: rgba(255,255,255,0.9); border-radius:8px; margin-bottom:10px; }
 
 /* CTA */
-.cta { background:linear-gradient(135deg,var(--primary),var(--secondary)); color:white; text-align:center; padding:40px 20px; borde
+.cta { background:linear-gradient(135deg,var(--primary),var(--secondary)); color:white; text-align:center; padding:40px 20px; border-radius:12px; margin:4rem 20px; }
+.cta a { color:white; font-weight:600; }
+
+@media(max-width:768px) {
+  h1 { font-size:2rem; }
+  h2 { font-size:1.5rem; }
+  .card-container { grid-template-columns:1fr; }
+}
