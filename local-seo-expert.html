@@ -3,17 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link
+    <title>Semantic SEO Expert in Bangladesh | Raju Ghosh</title>
+    
+    <!-- Font Awesome -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       referrerpolicy="no-referrer"
     />
 
+    <!-- Styles -->
     <link rel="stylesheet" href="/styles/layout/layout.css">
     <link rel="stylesheet" href="/styles/local.css">
+
+    <style>
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #351EBF 0%, #6C4BEB 100%);
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .hero-section .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #FBBC04;
+            color: #351EBF;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #fff;
+            color: #351EBF;
+        }
+
+        .hero-image img {
+            max-width: 500px;
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+            .hero-section .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            .hero-image img {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="header-container">
       <div class="nav-container">
         <a href="/index.html" class="logo">
@@ -22,14 +100,10 @@
 
         <nav class="nav-menu" role="navigation" aria-label="Main Menu">
           <ul>
-            <li>
-              <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
-            </li>
+            <li><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li class="nav-item dropdown">
-              <a href="/services.html"
-                >Services <i class="fa-solid fa-chevron-down"></i
-              ></a>
+              <a href="/services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
               <ul class="dropdown-menu">
                 <li><a href="#seo-audit">SEO Audit</a></li>
                 <li><a href="#onpage">On-Page SEO</a></li>
@@ -43,13 +117,7 @@
         </nav>
 
         <!-- Hamburger (mobile) -->
-        <button
-          id="hamburger"
-          class="hamburger"
-          aria-label="Toggle menu"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -59,14 +127,10 @@
       <!-- Mobile Menu -->
       <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
         <ul>
-          <li>
-            <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
-          </li>
+          <li><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="/about.html">About</a></li>
           <li class="nav-item dropdown">
-            <a href="/services.html" class="dropdown-toggle"
-              >Services <i class="fa-solid fa-chevron-down"></i
-            ></a>
+            <a href="/services.html" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="#seo-audit">SEO Audit</a></li>
               <li><a href="#onpage">On-Page SEO</a></li>
@@ -75,19 +139,39 @@
             </ul>
           </li>
           <li><a href="/contact.html">Contact</a></li>
-          <li>
-            <div class="getstarted"><a href="#contact">Get Started</a></div>
-          </li>
+          <li><div class="getstarted"><a href="#contact">Get Started</a></div></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <h1>Semantic SEO Expert in Bangladesh</h1>
+                    <p>
+                        I help businesses dominate search results with Entity-Based & NLP-Driven SEO strategies, ensuring sustainable traffic growth and top Google rankings.
+                    </p>
+                    <a href="#contact" class="cta-btn">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/image/seo-hero-image.svg" alt="Semantic SEO Illustration" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Example content section -->
         <section class="container">
-            <h1>hello world</h1>
+            <h2>Welcome to My SEO Portfolio</h2>
+            <p>
+                Explore my services, case studies, and results as a Semantic SEO Expert in Bangladesh.
+            </p>
         </section>
     </main>
-      <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <p>© 2025 Raju Ghosh | SEO Expert in Bangladesh</p>
@@ -100,27 +184,14 @@
     </footer>
 
     <!-- Sticky WhatsApp Button -->
-    <a
-      href="javascript:void(0)"
-      class="whatsapp-float"
-      id="whatsappBtn"
-      aria-label="Chat on WhatsApp"
-    >
+    <a href="javascript:void(0)" class="whatsapp-float" id="whatsappBtn" aria-label="Chat on WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- WhatsApp Popup -->
-    <div
-      id="whatsappPopup"
-      class="whatsapp-popup"
-      role="dialog"
-      aria-labelledby="popupTitle"
-      aria-hidden="true"
-    >
+    <div id="whatsappPopup" class="whatsapp-popup" role="dialog" aria-labelledby="popupTitle" aria-hidden="true">
       <div class="popup-content">
-        <button id="closePopup" class="close" aria-label="Close">
-          &times;
-        </button>
+        <button id="closePopup" class="close" aria-label="Close">&times;</button>
         <h3 id="popupTitle">Chat on WhatsApp</h3>
         <label for="waName">Your Name</label>
         <input type="text" id="waName" placeholder="Your Name" />
