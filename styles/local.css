@@ -261,7 +261,7 @@ body {
   width: 1200px;
   max-width: 92%;
   margin: 80;
-  padding-right: 30px;
+  padding-avobe: 60px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -335,5 +335,6 @@ body {
 
 /* Responsive tweaks */
 @media (max-width: 768px) { .animated-text { font-size: 1.5rem; } }
+
 
 
